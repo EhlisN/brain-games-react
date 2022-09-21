@@ -1,0 +1,16 @@
+.App {
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(170, 175, 201);
+}
+
+.score {
+  width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  color: rgb(98, 98, 135);
+  background-color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  box-shadow: 0 0 5px 1px rgb(98, 98, 135);
+}

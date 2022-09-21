@@ -1,0 +1,16 @@
+/* .login {
+  background-color: rgb(244, 223, 223);
+} */
+
+.registration {
+  color: bisque;
+  text-decoration: none;
+}
+
+.registration:hover {
+  border: none;
+}
+
+.login .btn-log {
+  margin: 0 auto;
+}
