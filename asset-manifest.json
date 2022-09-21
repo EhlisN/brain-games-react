@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/brain-games-react/static/css/main.355ba7c0.css",
+    "main.css": "/brain-games-react/static/css/main.913d6125.css",
     "main.js": "/brain-games-react/static/js/main.88882795.js",
     "static/media/img3.png": "/brain-games-react/static/media/img3.ecf08fc859ad42257920.png",
     "static/media/img1.png": "/brain-games-react/static/media/img1.51ead260ca6a71ec5c7b.png",
@@ -13,11 +13,11 @@
     "static/media/img5.png": "/brain-games-react/static/media/img5.3e431af5a60df7aba00a.png",
     "static/media/numbers.png": "/brain-games-react/static/media/numbers.6b09db828ebab6fd0e8b.png",
     "index.html": "/brain-games-react/index.html",
-    "main.355ba7c0.css.map": "/brain-games-react/static/css/main.355ba7c0.css.map",
+    "main.913d6125.css.map": "/brain-games-react/static/css/main.913d6125.css.map",
     "main.88882795.js.map": "/brain-games-react/static/js/main.88882795.js.map"
   },
   "entrypoints": [
-    "static/css/main.355ba7c0.css",
+    "static/css/main.913d6125.css",
     "static/js/main.88882795.js"
   ]
 }
