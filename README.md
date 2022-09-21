@@ -1,6 +1,6 @@
 # Games application
 
-## Live version: https://ehlisn.github.io/brain-games/
+## Live version: https://ehlisn.github.io/brain-games-react/
 
 ## Available Scripts
 
