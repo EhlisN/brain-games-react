@@ -32,10 +32,11 @@
   align-items: center;
   font-size: 50px;
   font-weight: 700;
-  color: brown;
+  color: rgb(246, 61, 61);
   position: absolute;
   background-color: rgba(117, 85, 85, 0.368);
   z-index: 20;
+  animation: 2s blinkText linear;
 }
 
 button {

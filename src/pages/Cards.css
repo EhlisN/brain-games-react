@@ -1,5 +1,5 @@
 .cards {
-  margin: 30px auto;
+  margin: 10px auto;
   width: 500px;
   height: 500px;
   border: 5px solid rgb(49, 40, 81);
@@ -32,6 +32,7 @@
   color: brown;
   top: 42%;
   z-index: 10;
+  /* animation: 2s blinkText linear; */
 }
 
 .nameCard {
@@ -40,6 +41,10 @@
   border-radius: 5px;
   opacity: 0;
   animation: 2s hideImage linear;
+}
+
+.numbersGame {
+  text-align: center;
 }
 
 .card.active {
@@ -73,5 +78,39 @@
   }
   85% {
     opacity: 0;
+  }
+}
+
+@keyframes blinkText {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+button {
+  background-color: rgb(67, 81, 124);
+  border-radius: 5px;
+  color: bisque;
+  padding: 5px 20px;
+  box-shadow: 0 0 5px 1px rgb(98, 98, 135);
+}
+
+@media (max-width: 768px) {
+  .cards {
+    width: 400px;
+    height: 400px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+    margin-top: 7px;
+  }
+
+  .score {
+    width: 400px;
   }
 }

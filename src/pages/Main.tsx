@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import Context from '../context/context';
 import './Main.css';
 
 const Main = () => {
   const imgCards = require('../img/Cards.png');
   const imgNumbers = require('../img/numbers.png');
+  const { isLoginUser } = useContext(Context);
 
   return (
     <div>
@@ -16,9 +18,13 @@ const Main = () => {
             Test your math skills and add the numbers correctly. Add numbers and
             enjoy the game.
           </div>
-          <Link className='mainLink' aria-current='page' to='numbers'>
-            Play
-          </Link>
+          {isLoginUser ? (
+            <Link className='mainLink' aria-current='page' to='numbers'>
+              Play
+            </Link>
+          ) : (
+            <h4>Log in for play</h4>
+          )}
         </div>
         <img src={imgNumbers} alt='cards' />
       </div>
@@ -30,9 +36,13 @@ const Main = () => {
             in which you will look for identical pairs or suitable matches. The
             fewer attempts required, the better the result.
           </div>
-          <Link className='mainLink' aria-current='page' to='cards'>
-            Play
-          </Link>
+          {isLoginUser ? (
+            <Link className='mainLink' aria-current='page' to='cards'>
+              Play
+            </Link>
+          ) : (
+            <h4>Log in for play</h4>
+          )}
         </div>
         <img src={imgCards} alt='cards' />
       </div>

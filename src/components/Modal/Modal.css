@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.modal-dialog {
+  margin-top: 20px;
+}
+
 .modal-content {
   background-color: rgb(62, 66, 109);
   color: bisque;
@@ -21,4 +25,12 @@
 
 .modal-header {
   border-bottom: 1px solid bisque;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }

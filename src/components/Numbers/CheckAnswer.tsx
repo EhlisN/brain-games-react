@@ -26,12 +26,12 @@ const CheckAnswer = ({
     }, 0);
     setStop(true);
     if (+userAnswer === result) {
-      setResult('You are win!!!');
+      setResult(`You are win!!!`);
       setCount(count + 1);
       setWinner(true);
       setUserAnswer('');
     } else {
-      setResult('You are lose!!!');
+      setResult(`You are lose!!!`);
       setWinner(false);
       setCount(3);
       setUserAnswer('');

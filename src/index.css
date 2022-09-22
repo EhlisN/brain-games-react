@@ -17,6 +17,6 @@ code {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   background-color: rgb(252, 248, 242);
 }

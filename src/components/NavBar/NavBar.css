@@ -1,12 +1,13 @@
 .navBar {
-  height: 100px;
+  height: 100%;
+  width: 100vw;
   background-color: rgb(62, 66, 109);
   color: bisque;
   position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 10px 30px;
 }
 
 ul {
@@ -32,16 +33,6 @@ a.active {
   font-size: 20px;
 }
 
-.logo {
-  width: 300px;
-  display: flex;
-}
-
-.logo img {
-  width: 15%;
-  margin-right: 20px;
-}
-
 .btn-log {
   background-color: bisque;
   border: 1px solid rgb(62, 66, 109);
@@ -55,4 +46,17 @@ a.active {
   background-color: rgb(251, 235, 215);
   color: rgb(62, 66, 109);
   box-shadow: 0 0 5px 2px bisque;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  .navLink {
+    font-size: 14px;
+  }
+  .btn-log {
+    font-size: 14px;
+    padding: 2px 5px;
+  }
 }

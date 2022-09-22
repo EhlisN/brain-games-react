@@ -17,6 +17,11 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  margin-top: 20px;
+  color: brown;
+}
+
 .game h3 {
   color: rgb(49, 40, 81);
   font-size: 30px;
@@ -35,8 +40,23 @@ h2 {
   box-shadow: 0 0 5px 1px rgb(90, 90, 124);
 }
 
+.mainLink:hover {
+  border-bottom: 1px solid rgb(49, 40, 81);
+}
+
 img {
   width: 200px;
   border: 1px solid rgb(49, 40, 81);
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .game {
+    width: 90%;
+    margin: 30px auto;
+    flex-direction: column-reverse;
+  }
+  img {
+    margin-bottom: 20px;
+  }
 }

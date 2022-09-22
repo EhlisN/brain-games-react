@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CheckAnswer from '../components/Numbers/CheckAnswer';
 import AboutGame from '../components/Numbers/AboutGame';
 import NewNumber from '../components/Numbers/NewNumber';
@@ -6,7 +6,6 @@ import './Numbers.css';
 
 const Numbers = () => {
   const [numbers, setNumbers] = useState([0]);
-  const [play, setPlay] = useState(false);
   const [info, setInfo] = useState(false);
   const [count, setCount] = useState(3);
   const [stop, setStop] = useState(false);
@@ -16,6 +15,10 @@ const Numbers = () => {
     stop: false,
     result: '',
   });
+
+  useEffect(() => {
+    playGame();
+  }, []);
 
   const addNumber = (count: Number) => {
     let arr = [];
@@ -27,24 +30,13 @@ const Numbers = () => {
   };
 
   const playGame = () => {
-    setPlay(true);
     setGameStatus({ ...gameStatus });
     addNumber(count);
   };
 
   return (
     <>
-      <div className={`playGameNumbers ${play && 'hide'}`}>
-        <h3>Numbers</h3>
-        <div>
-          Test your math skills and add the numbers correctly. Add numbers and
-          enjoy the game.
-        </div>
-        <button type='button' onClick={() => playGame()}>
-          Play
-        </button>
-      </div>
-      <div className={`numbersGame ${play && 'show'}`}>
+      <div className={`numbersGame show`}>
         <CheckAnswer
           setResult={setResult}
           setCount={setCount}
