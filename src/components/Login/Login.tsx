@@ -21,6 +21,8 @@ const Login = () => {
       );
       if (authorizationData.data.token) {
         localStorage.setItem('token', authorizationData.data.token);
+        localStorage.setItem('numbers', '0');
+        localStorage.setItem('cards', '0');
         setIsLoginUser(true);
         setOpenModal(false);
       }

@@ -26,7 +26,12 @@ const CheckAnswer = ({
     }, 0);
     setStop(true);
     if (+userAnswer === result) {
-      setResult(`You are win!!!`);
+      // let bestScore = (localStorage.getItem('numbers'));
+      // if (bestScore == (count - 2 + '')) {
+      //   localStorage.setItem('numbers', (count - 2 + ''));
+      // }
+      setResult(`You are win!!!
+      Your score: ${count - 2}`);
       setCount(count + 1);
       setWinner(true);
       setUserAnswer('');
@@ -56,7 +61,7 @@ const CheckAnswer = ({
         </button>
         <input
           type='text'
-          placeholder='Enter right answer here'
+          placeholder='Enter answer'
           value={userAnswer}
           onChange={(event) => setUserAnswer(event.target.value)}
         ></input>

@@ -13,16 +13,16 @@ const NewNumber = ({ num, stop }: { num: number; stop: boolean }) => {
 
   const moveNumber = (top: number, left: number) => {
     let direction = Math.trunc(Math.random() * 4 + 1);
-    if (direction === 1 && top < 300) {
+    if (direction === 1 && top < 400) {
       top += 50;
     }
-    if (direction === 2 && top > 0) {
+    if (direction === 2 && top > 10) {
       top -= 50;
     }
-    if (direction === 3 && left < 300) {
+    if (direction === 3 && left < 420) {
       left += 50;
     }
-    if (direction === 4 && left > 0) {
+    if (direction === 4 && left > 20) {
       left -= 50;
     } else {
       moveNumber(top, left);
