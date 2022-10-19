@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brain-games-react/static/css/main.3eec470c.css",
-    "main.js": "/brain-games-react/static/js/main.0530c2b4.js",
+    "main.css": "/brain-games-react/static/css/main.de1c7362.css",
+    "main.js": "/brain-games-react/static/js/main.6ae08811.js",
     "static/media/img3.png": "/brain-games-react/static/media/img3.ecf08fc859ad42257920.png",
     "static/media/img1.png": "/brain-games-react/static/media/img1.51ead260ca6a71ec5c7b.png",
     "static/media/img2.png": "/brain-games-react/static/media/img2.6d1bdaa200fe33135ff4.png",
@@ -13,11 +13,11 @@
     "static/media/img5.png": "/brain-games-react/static/media/img5.3e431af5a60df7aba00a.png",
     "static/media/numbers.png": "/brain-games-react/static/media/numbers.6b09db828ebab6fd0e8b.png",
     "index.html": "/brain-games-react/index.html",
-    "main.3eec470c.css.map": "/brain-games-react/static/css/main.3eec470c.css.map",
-    "main.0530c2b4.js.map": "/brain-games-react/static/js/main.0530c2b4.js.map"
+    "main.de1c7362.css.map": "/brain-games-react/static/css/main.de1c7362.css.map",
+    "main.6ae08811.js.map": "/brain-games-react/static/js/main.6ae08811.js.map"
   },
   "entrypoints": [
-    "static/css/main.3eec470c.css",
-    "static/js/main.0530c2b4.js"
+    "static/css/main.de1c7362.css",
+    "static/js/main.6ae08811.js"
   ]
 }
